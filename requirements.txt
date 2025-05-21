@@ -315,8 +315,6 @@ PyYAML==6.0.2
 pyzmq==26.2.0
 qtstylish==0.1.5
 quickjs==1.19.4
-random2==1.0.2
-ray==2.44.1
 react==4.3.0
 redis==5.2.1
 referencing==0.35.1
