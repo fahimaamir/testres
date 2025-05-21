@@ -1,12 +1,10 @@
-#https://discuss.streamlit.io/t/ag-grid-checkbox-selection-for-grouped-table/37411/3
-#https://discuss.streamlit.io/t/ag-grid-checkbox-selection-reruns-entire-script/37418
 
 import streamlit as st
 from st_aggrid import AgGrid,GridOptionsBuilder
 import pandas as pd
 from time import sleep
-
-@st.cache_resource
+#htmlmin==0.1.12
+#@st.cache_resource
 def load_data():
     df = pd.DataFrame({'name' : ['User1', 'User2', 'User3'],
                     'role' : ['member', 'admin', 'moderator'],
@@ -38,8 +36,3 @@ if b2:
         AgGrid(df_filter)
         
         
-    #grid_return = AgGrid(df, editable=True, theme='streamlit')
-#if st.button('new record Check availability',on_click= tt):
-#    st.write("testing ")
-#    df = pd.read_csv('https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv')
-    #return df
